@@ -1,3 +1,5 @@
+# аналог блокнота
+
 from tkinter import *
 from tkinter.filedialog import * 
 def inText():
