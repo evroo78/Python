@@ -4,7 +4,7 @@ from tkinter import *
 from tkinter.filedialog import * 
 def inText():
   name = askopenfilename()
-  if (str(name)!="()"):
+  if (str(name)!="()"): # використано для того, щоб уникнути зауважень (помилок) при натисканні клавіш з написом Cancel
     f = open(name)
     s = f.read()
     t.delete(1.0,END)
@@ -17,7 +17,7 @@ def outText():
     ("TXT files", "* .txt"),
     ("HTML files", "* .html; *. htm"),
     ( "All files", "*. *")))
-  if (str(name)!=""):  
+  if (str(name)!=""):  # використано для того, щоб уникнути зауважень (помилок) при натисканні клавіш з написом Cancel
     f = open(name, 'w')
     s = t.get(1.0, END)
     f.write(s)
